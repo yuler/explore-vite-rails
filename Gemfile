@@ -5,7 +5,7 @@ ruby file: ".ruby-version"
 gem "rails", "~> 8.0.0"
 
 # Drivers
-# gem "sqlite3", ">= 2.1"
+gem "sqlite3", ">= 2.1"
 # gem "pg", "~> 1.5"
 
 # Deployment
@@ -15,6 +15,7 @@ gem "thruster", require: false
 gem "kamal", require: false
 
 # Front-end
+gem "vite_rails"
 gem "propshaft"
 # gem "jsbundling-rails"
 # gem "cssbundling-rails"
@@ -46,7 +47,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "hotwire-livereload"
+  # gem "hotwire-livereload"
   gem "letter_opener"
   gem "web-console"
 end
